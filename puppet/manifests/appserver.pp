@@ -64,10 +64,28 @@ package { 'jasmine-node':
   provider => 'npm',
 }
 
-# install nodeunit for testing
-package { 'nodeunit':
+# install yoeman for scaffolding
+package { 'yo':
   ensure   => present,
   provider => 'npm',
+}
+
+# install generator-webapp for plugins
+package { 'generator-webapp':
+  ensure   => present,
+  provider => 'npm',
+}
+
+# install passport for authentication
+package { 'passport':
+  ensure   => present,
+  provider => 'npm',
+}
+
+# install ruby
+package { 'ruby':
+  ensure   => present,
+  provider => 'apt-get',
 }
 
 
